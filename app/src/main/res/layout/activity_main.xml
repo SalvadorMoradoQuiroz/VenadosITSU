@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_700"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/buttons_left"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/imageButton_ClawClose"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/btn_garra_cerrar"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            app:srcCompat="@drawable/claw_close" />
+
+        <ImageButton
+            android:id="@+id/imageButton_Up"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/btn_up"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/arrow_up" />
+
+        <ImageButton
+            android:id="@+id/imageButton_Down"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/btn_down"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/arrow_down" />
+
+        <ImageButton
+            android:id="@+id/imageButton_ClawOpen"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/btn_garra_abrir"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            app:srcCompat="@drawable/claw_open" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons_left2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/imageButton_Stop"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/btn_detener"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/stop"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton_EmptyUp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/btn_vaciar_up"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/sin_vaciar" />
+
+        <ImageButton
+            android:id="@+id/imageButton_EmptyDown"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/btn_vaciar_down"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/vaciar" />
+
+        <ImageButton
+            android:id="@+id/imageButton_SacarBase"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/btn_sacar_base"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/sacar_base" />
+
+        <ImageButton
+            android:id="@+id/imageButton_MeterBase"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/btn_meter_base"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/meter_base" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/imageMonitor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/botarga_tec"
+            tools:ignore="ImageContrastCheck"></ImageView>
+
+    </FrameLayout>
+
+    <!--<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="3">
+
+        <TextView
+            android:id="@+id/textView_Actividades"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Actividades de sistema de limonada: "
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:ignore="TextContrastCheck" />
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/buttons_right"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/imageButton_ZipperUp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/btn_cremallera_subir"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            app:srcCompat="@drawable/zipper_up" />
+
+        <ImageButton
+            android:id="@+id/imageButton_Right"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/btn_right"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/claw_open" />
+
+        <ImageButton
+            android:id="@+id/imageButton_Left"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/btn_letf"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/claw_close" />
+
+        <ImageButton
+            android:id="@+id/imageButton_ZipperDown"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/btn_cremallera_bajar"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            app:srcCompat="@drawable/zipper_down" />
+    </LinearLayout>
+</LinearLayout>

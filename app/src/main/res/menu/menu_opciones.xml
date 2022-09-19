@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/conf_bt"
+        android:title="@string/confi_stringbt"
+        app:showAsAction="never"
+        />
+
+</menu>
